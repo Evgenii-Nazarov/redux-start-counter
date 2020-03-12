@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import {connect} from 'react-redux';
 import {counterMinus, counterPlus, countersReset, countersAdd, counterDelete} from "./actions";
@@ -7,21 +7,9 @@ import AddCounter from "./AddCounter";
 
 function App(props) {
 
-    const [counterName, setCounterName] = useState('');
-    const [counterValue, setCounterValue] = useState('');
 
-    const inputCounterNameHandler = (e) => {
-        setCounterName(e.target.value);
-    };
-
-    const inputCounterValueHandler = (e) => {
-        setCounterValue(e.target.value);
-    };
-
-    const addCounterButtonHandler = () => {
+    const addCounterButtonHandler = (counterName, counterValue) => {
         props.addCounter(counterName, counterValue);
-        setCounterName('');
-        setCounterValue('');
     };
 
     return (
@@ -37,6 +25,7 @@ function App(props) {
                          value={el.counterValue}
                          counterPlus={props.myCounterPlus}
                          counterMinus={props.myCounterMinus}
+                         counterDelete={props.deleteCounter}
                 />
             ))}
             <button onClick={props.myReset}>RESET</button>
@@ -46,11 +35,7 @@ function App(props) {
             />
 
 
-            <input type="text" name='counterName' placeholder='type name' value={counterName}
-                   onChange={inputCounterNameHandler}/>
-            <input type="text" name='counterValue' placeholder='type value' value={counterValue}
-                   onChange={inputCounterValueHandler}/>
-            <button onClick={() => addCounterButtonHandler()}>Add counter</button>
+
         </div>
     );
 }

@@ -27,6 +27,6 @@ export function countersAdd(counterName, counterValue) {
 export function counterDelete(id) {
     return {
         type: 'COUNTER_DELETE',
-        payload: id
+        payload: {id}
     };
 }
