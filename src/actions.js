@@ -30,3 +30,10 @@ export function counterDelete(id) {
         payload: {id}
     };
 }
+
+export function counterUpdate(counterName,id) {
+    return {
+        type: 'COUNTER_UPDATE',
+        payload: {counterName, id}
+    };
+}

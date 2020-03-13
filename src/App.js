@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {connect} from 'react-redux';
-import {counterMinus, counterPlus, countersReset, countersAdd, counterDelete} from "./actions";
+import {counterMinus, counterPlus, countersReset, countersAdd, counterDelete, counterUpdate} from "./actions";
 import Counter from "./Counter";
 import AddCounter from "./AddCounter";
 
@@ -26,6 +26,7 @@ function App(props) {
                          counterPlus={props.myCounterPlus}
                          counterMinus={props.myCounterMinus}
                          counterDelete={props.deleteCounter}
+                         counterUpdate={props.counterUpdate}
                 />
             ))}
             <button onClick={props.myReset}>RESET</button>
@@ -41,8 +42,6 @@ function App(props) {
 }
 
 const mapStateToProps = state => ({
-    myCounter: state.counters[0].counterValue,
-    myCounterName: state.counters[0].counterName,
     myCounters: state.counters
 });
 
@@ -51,7 +50,8 @@ const mapDispatchToProps = dispatch => ({
     myCounterMinus: (id) => dispatch(counterMinus(id)),
     myReset: () => dispatch(countersReset()),
     addCounter: (counterName, counterValue) => dispatch(countersAdd(counterName, counterValue)),
-    deleteCounter: (id) => dispatch(counterDelete(id))
+    deleteCounter: (id) => dispatch(counterDelete(id)),
+    counterUpdate: (counterName,id) => dispatch(counterUpdate(counterName,id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

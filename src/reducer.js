@@ -22,7 +22,7 @@ export default function counter(state = initialState, action) {
             return {
                 ...state,
                 counters: state.counters.map(el => {
-                    if (action.payload === el.id) return {...el, counterValue: el.counterValue + 1}
+                    if (action.payload === el.id) return {...el, counterValue: el.counterValue + 1};
                     return el
                 })
             };
@@ -31,7 +31,7 @@ export default function counter(state = initialState, action) {
             return {
                 ...state,
                 counters: state.counters.map(el => {
-                    if (action.payload === el.id) return {...el, counterValue: el.counterValue - 1}
+                    if (action.payload === el.id) return {...el, counterValue: el.counterValue - 1};
                     return el
                 })
             };
@@ -56,6 +56,15 @@ export default function counter(state = initialState, action) {
             return {
                 ...state,
                 counters: state.counters.filter(el => el.id !== action.payload.id)
+            };
+
+        case 'COUNTER_UPDATE':
+            return {
+                ...state,
+                counters: state.counters.map(el => {
+                    if (action.payload.id === el.id) return {...el, counterName: action.payload.counterName};
+                    return el;
+                })
             };
 
         default:
