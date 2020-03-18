@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export function counterPlus(id) {
     return {
         type: 'COUNTER_PLUS',
@@ -35,5 +37,23 @@ export function counterUpdate(counterName,id) {
     return {
         type: 'COUNTER_UPDATE',
         payload: {counterName, id}
+    };
+}
+
+export function userLogin(args) {
+
+    axios({
+        method: 'post',
+        url:'https://server-stage.pasv.us/user/login',
+        data: args
+    }).then(res=>{
+        console.log(res.data)
+    }).catch(err=> {
+        console.log(err)
+    });
+
+    return {
+        type: 'USER_LOGIN',
+        payload: args
     };
 }
