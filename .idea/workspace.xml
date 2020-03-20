@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a90561ec-17f0-4251-889d-09003e068e51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserLoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="a90561ec-17f0-4251-889d-09003e068e51" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +89,7 @@
       <workItem from="1584063650368" duration="591000" />
       <workItem from="1584081040799" duration="111000" />
       <workItem from="1584202457451" duration="3719000" />
+      <workItem from="1584597758153" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="added new functionality">
       <created>1583995051186</created>
@@ -120,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584081118372</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added update action">
+      <created>1584597795608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584597795609</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,10 +132,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="added update action" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1584081115718">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1584597793340">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1584081115718" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1584597793340" />
     <state x="509" y="241" width="371" height="246" key="Github.ShareDialog" timestamp="1583909025888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -157,10 +156,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="908" height="95" key="GridCell.Tab.0.right/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1584212522569" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584081123695">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584597797932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1584081123695" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1584597797932" />
     <state x="104" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583617428588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

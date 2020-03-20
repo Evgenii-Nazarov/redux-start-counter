@@ -44,7 +44,7 @@ function USerLoginForm(props) {
 }
 
 const mapStateToProps = state => ({
-    // myCounters: state.counters
+    myCounters: state.counters
 });
 
 const mapDispatchToProps = dispatch => ({

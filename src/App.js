@@ -9,9 +9,9 @@ import UserLoginForm from "./UserLoginForm";
 function App(props) {
 
 
-    // const addCounterButtonHandler = (counterName, counterValue) => {
-    //     props.addCounter(counterName, counterValue);
-    // };
+    const addCounterButtonHandler = (counterName, counterValue) => {
+        props.addCounter(counterName, counterValue);
+    };
 
     return (
         <div className="App">
