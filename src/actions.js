@@ -57,3 +57,21 @@ export function userLogin(args) {
         payload: args
     };
 }
+
+export function userDelete(args) {
+
+    axios({
+        method: 'delete',
+        url:`https://server-stage.pasv.us/user/${args.userId}`,
+        data: args
+    }).then(res=>{
+        console.log(res.data)
+    }).catch(err=> {
+        console.log(err)
+    });
+
+    return {
+        type: 'USER_LOGIN',
+        payload: args
+    };
+}
