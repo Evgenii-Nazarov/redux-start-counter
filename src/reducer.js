@@ -12,7 +12,8 @@ const initialState = {
             counterValue: 3,
             counterName: 'Third Counter',
             id: 345
-        }]
+        }],
+    userAuth: {}
 };
 
 
@@ -65,6 +66,12 @@ export default function counter(state = initialState, action) {
                     if (action.payload.id === el.id) return {...el, counterName: action.payload.counterName};
                     return el;
                 })
+            };
+
+            case 'User_login':
+            return {
+                ...state,
+                userAuth: action.payload
             };
 
         default:
