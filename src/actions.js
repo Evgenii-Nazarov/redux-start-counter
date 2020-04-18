@@ -58,6 +58,24 @@ export function userLogin(args) {
     };
 }
 
+export function userUpdate(args) {
+
+    axios({
+        method: 'patch',
+        url:'https://server-stage.pasv.us/user/login',
+        data: args
+    }).then(res=>{
+        console.log(res.data)
+    }).catch(err=> {
+        console.log(err)
+    });
+
+    return {
+        type: 'USER_LOGIN',
+        payload: args
+    };
+}
+
 export function getUserById(args) {
 
     axios({

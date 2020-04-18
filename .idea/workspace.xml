@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a90561ec-17f0-4251-889d-09003e068e51" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1585203500864" duration="642000" />
       <workItem from="1586508721858" duration="984000" />
       <workItem from="1586564701412" duration="583000" />
-      <workItem from="1587003218148" duration="1867000" />
+      <workItem from="1587003218148" duration="1936000" />
     </task>
     <task id="LOCAL-00001" summary="added new functionality">
       <created>1583995051186</created>
@@ -141,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585204135831</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added update action">
+      <created>1587019306731</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587019306731</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,10 +160,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="added update action" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585204134284">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587019303848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1585204134284" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1587019303848" />
     <state x="509" y="241" width="371" height="246" key="Github.ShareDialog" timestamp="1583909025888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -178,10 +184,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="908" height="95" key="GridCell.Tab.0.right/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1584212522569" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585204138625">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1587019364212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1585204138625" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.85.1920.1040@0.0.1366.728" timestamp="1587019364212" />
     <state x="104" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583617428588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
