@@ -19,7 +19,7 @@ export function countersReset() {
 }
 
 export function countersAdd(counterName, counterValue) {
-    const counterId= Math.random();
+    const counterId = Math.random();
     return {
         type: 'COUNTER_ADD',
         payload: {counterId, counterName, counterValue}
@@ -33,7 +33,7 @@ export function counterDelete(id) {
     };
 }
 
-export function counterUpdate(counterName,id) {
+export function counterUpdate(counterName, id) {
     return {
         type: 'COUNTER_UPDATE',
         payload: {counterName, id}
@@ -44,11 +44,11 @@ export function userLogin(args) {
 
     axios({
         method: 'post',
-        url:'https://server-stage.pasv.us/user/login',
+        url: 'https://server-stage.pasv.us/user/login',
         data: args
-    }).then(res=>{
+    }).then(res => {
         console.log(res.data)
-    }).catch(err=> {
+    }).catch(err => {
         console.log(err)
     });
 
@@ -62,11 +62,11 @@ export function userUpdate(args) {
 
     axios({
         method: 'patch',
-        url:'https://server-stage.pasv.us/user/login',
+        url: 'https://server-stage.pasv.us/user/login',
         data: args
-    }).then(res=>{
+    }).then(res => {
         console.log(res.data)
-    }).catch(err=> {
+    }).catch(err => {
         console.log(err)
     });
 
@@ -80,10 +80,10 @@ export function getUserById(args) {
 
     axios({
         method: 'get',
-        url:'https://server-stage.pasv.us/user/login',
-    }).then(res=>{
+        url: 'https://server-stage.pasv.us/user/login',
+    }).then(res => {
         console.log(res.data)
-    }).catch(err=> {
+    }).catch(err => {
         console.log(err)
     });
 
@@ -97,11 +97,11 @@ export function userDelete(args) {
 
     axios({
         method: 'delete',
-        url:`https://server-stage.pasv.us/user/${args.userId}`,
+        url: `https://server-stage.pasv.us/user/${args.userId}`,
         data: args
-    }).then(res=>{
+    }).then(res => {
         console.log(res.data)
-    }).catch(err=> {
+    }).catch(err => {
         console.log(err)
     });
 
