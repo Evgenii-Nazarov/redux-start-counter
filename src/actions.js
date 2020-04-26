@@ -66,9 +66,7 @@ export function userUpdate(args) {
         data: args
     }).then(res => {
         console.log(res.data)
-    }).catch(err => {
-        console.log(err)
-    });
+    }).catch(err => err );
 
     return {
         type: 'USER_LOGIN',
