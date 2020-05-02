@@ -35,6 +35,7 @@ function USerLoginForm(props) {
 
             <h3>USer Login Form</h3>
             <input name={'email'} value={email} onChange={inputEmailHandler} type="text"/>
+            <input name={'email'} value={email} onChange={inputEmailHandler} type="text"/>
             <input name='password' value={password} onChange={inputPasswordHandler} type="password"/>
             <input name='password' value={password} onChange={inputPasswordHandler} type="password"/>
             <button onClick={()=>loginButtonHandler()}>Login</button>
