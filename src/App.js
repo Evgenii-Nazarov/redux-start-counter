@@ -34,6 +34,7 @@ function App(props) {
                          counterMinus={props.myCounterMinus}
                          counterDelete={props.deleteCounter}
                          counterUpdate={props.counterUpdate}
+                         counterUpdate1={props.counterUpdate}
                 />
             ))}
             <button onClick={props.myReset}>RESET</button>
